@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Unbounded:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1 class="glitch-text" data-text="YOUR NAME">Preyanshu Shah</h1>
+            <button class="theme-toggle" type="button" aria-label="Toggle light and dark mode">
+                <span class="dot" aria-hidden="true"></span>
+                <span class="label">Light Mode</span>
+            </button>
+            <h1 class="glitch-text" data-text="Preyanshu Shah">Preyanshu Shah</h1>
             <p class="tagline">Full-Stack Developer crafting <span class="accent">digital experiences</span></p>
+            <div class="location-row" aria-label="Location">
+                <svg class="location-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M12 2.25c-4.3 0-7.75 3.45-7.75 7.75 0 5.54 7.06 11.4 7.36 11.65a.6.6 0 0 0 .78 0c.3-.25 7.36-6.11 7.36-11.65 0-4.3-3.45-7.75-7.75-7.75zm0 11.3a3.55 3.55 0 1 1 0-7.1 3.55 3.55 0 0 1 0 7.1z"></path>
+                </svg>
+                <span>Dharan, Sunsari</span>
+            </div>
         </header>
 
         <nav>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience-education">Experience & Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -33,25 +45,125 @@
                     My focus is on writing clean, efficient code and creating intuitive user experiences.
                     I'm constantly learning new technologies and pushing the boundaries of what's possible on the web.
                 </p>
-                <div class="tech-stack">
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">TypeScript</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                </div>
+                <a class="cv-link" href="cv preyanshu shah.pdf" target="_blank" rel="noopener" download>Download CV</a>
             </div>
             <div class="about-visual">
                 <div class="code-block">
                     <div class="code-line"><span class="keyword">const</span> <span class="function">developer</span> = {</div>
-                    <div class="code-line">  name: <span class="string">"Your Name"</span>,</div>
+                    <div class="code-line">  name: <span class="string">"Preyanshu Shah"</span>,</div>
                     <div class="code-line">  role: <span class="string">"Full-Stack Developer"</span>,</div>
-                    <div class="code-line">  skills: [<span class="string">"React"</span>, <span class="string">"Node"</span>, <span class="string">"Python"</span>],</div>
+                  
                     <div class="code-line">  passion: <span class="string">"Building cool stuff"</span>,</div>
+                    <div class="code -line"> sports </div>
                     <div class="code-line">  status: <span class="string">"Always learning"</span></div>
                     <div class="code-line">};</div>
                     <div class="code-line"><span class="comment">// Let's build something amazing!</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/react/61dafb" alt="" aria-hidden="true">
+                    <span>React Native</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/dotnet/512bd4" alt="" aria-hidden="true">
+                    <span>ASP.NET</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="" aria-hidden="true">
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/express/ffffff" alt="" aria-hidden="true">
+                    <span>Express.js</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/javascript/f7df1e" alt="" aria-hidden="true">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/typescript/3178c6" alt="" aria-hidden="true">
+                    <span>TypeScript</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/mysql/4479a1" alt="" aria-hidden="true">
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/prisma/ffffff" alt="" aria-hidden="true">
+                    <span>Prisma</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/zustand/ffffff" alt="" aria-hidden="true">
+                    <span>Zustand</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/react/61dafb" alt="" aria-hidden="true">
+                    <span>React.js</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/amazonaws/ff9900" alt="" aria-hidden="true">
+                    <span>AWS</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/tailwindcss/06b6d4" alt="" aria-hidden="true">
+                    <span>Tailwind CSS</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/nextdotjs/ffffff" alt="" aria-hidden="true">
+                    <span>Next.js</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/postgresql/4169e1" alt="" aria-hidden="true">
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/mongodb/47a248" alt="" aria-hidden="true">
+                    <span>MongoDB</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/firebase/ffca28" alt="" aria-hidden="true">
+                    <span>Firebase</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/git/f05032" alt="" aria-hidden="true">
+                    <span>Git</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/github/ffffff" alt="" aria-hidden="true">
+                    <span>GitHub</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/vercel/ffffff" alt="" aria-hidden="true">
+                    <span>Vercel</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/netlify/00c7b7" alt="" aria-hidden="true">
+                    <span>Netlify</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/postman/ff6c37" alt="" aria-hidden="true">
+                    <span>Postman</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/jest/c21325" alt="" aria-hidden="true">
+                    <span>Jest</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/docker/2496ed" alt="" aria-hidden="true">
+                    <span>Docker</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/python/3776ab" alt="" aria-hidden="true">
+                    <span>Python</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.simpleicons.org/railway/ffffff" alt="" aria-hidden="true">
+                    <span>Railway</span>
                 </div>
             </div>
         </section>
@@ -61,50 +173,135 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <span class="project-number">01</span>
-                    <h3>Project Alpha</h3>
-                    <p>A full-stack web application that helps users manage their tasks with an intuitive interface and real-time updates.</p>
+                    <h3>Smart Street Light</h3>
+                    <p>Developed a system that automatically controls street lights based on ambient light and object detection, improving energy efficiency.</p>
                     <div class="project-tags">
-                        <span class="project-tag">React</span>
-                        <span class="project-tag">Node.js</span>
-                        <span class="project-tag">MongoDB</span>
-                        <span class="project-tag">WebSockets</span>
+                        <span class="project-tag">IR/LIDAR Sensors</span>
+                        <span class="project-tag">LDR</span>
+                        <span class="project-tag">Arduino</span>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <span class="project-number">02</span>
-                    <h3>Project Beta</h3>
-                    <p>An AI-powered analytics dashboard that visualizes complex data patterns with beautiful, interactive charts.</p>
+                    <h3>E-commerce for Monitor</h3>
+                    <p>Implemented an online shopping platform to manage monitor inventory, including user authentication and order processing.</p>
                     <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Flask</span>
-                        <span class="project-tag">D3.js</span>
-                        <span class="project-tag">PostgreSQL</span>
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">JSTL</span>
+                        <span class="project-tag">JSP</span>
+                        <span class="project-tag">MySQL</span>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <span class="project-number">03</span>
-                    <h3>Project Gamma</h3>
-                    <p>A mobile-first e-commerce platform with seamless checkout and inventory management built for modern businesses.</p>
+                    <h3>Cloth Manager</h3>
+                    <p>Built a mobile app to manage clothing stock, including features like inventory tracking and sales management.</p>
                     <div class="project-tags">
-                        <span class="project-tag">Next.js</span>
-                        <span class="project-tag">TypeScript</span>
-                        <span class="project-tag">Stripe</span>
-                        <span class="project-tag">AWS</span>
+                        <span class="project-tag">Flutter</span>
+                        <span class="project-tag">Django</span>
+                        <span class="project-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <span class="project-number">04</span>
+                    <h3>Kurash Championship Scoreboard App</h3>
+                    <p>Developed a real-time score analysis and broadcasting system for the Kurash Championship, integrating live data management with Supabase.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Flutter</span>
+                        <span class="project-tag">Supabase</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <span class="project-number">05</span>
+                    <h3>Yatra App</h3>
+                    <p>Designed a vehicle rental app offering features like destination search, local guide hiring, listing own vehicles, and specific searches.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Flutter</span>
+                        <span class="project-tag">Django</span>
+                        <span class="project-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <span class="project-number">06</span>
+                    <h3>Bookery</h3>
+                    <p>Created an online platform for book purchases and library management, featuring user reviews, secure payments, and real-time inventory tracking.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">ASP.NET Core</span>
+                        <span class="project-tag">React.js</span>
+                        <span class="project-tag">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience-education" class="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-tabs" role="tablist" aria-label="Experience tabs">
+                <button class="tab-button active" type="button" role="tab" aria-selected="true" aria-controls="tab-work" data-target="tab-work">Work</button>
+                <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="tab-studies" data-target="tab-studies">Studies</button>
+            </div>
+            <div class="tab-panels">
+                <div id="tab-work" class="tab-panel active" role="tabpanel" tabindex="0">
+                    <div class="experience-card">
+                        <div class="experience-entry">
+                            <h4>CS Nepal <span class="experience-role">(Flutter Intern)</span></h4>
+                            <ul class="experience-list">
+                                <li>Conducted code reviews ensuring quality and consistency in Flutter codebases.</li>
+                                <li>Integrated user feedback for improved app performance and user satisfaction.</li>
+                                <li>Utilized Git for collaborative development and version control.</li>
+                                <li>Diagnosed and fixed issues to maintain high app performance.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-entry">
+                            <h4>Professional Experience</h4>
+                            <p class="experience-meta">Sales Associate – Clothing Store (2020–2022)</p>
+                            <ul class="experience-list">
+                                <li>Assisted customers in product selection and purchases.</li>
+                                <li>Built positive customer relationships to encourage repeat sales.</li>
+                                <li>Handled billing, stock arrangement, and daily sales support.</li>
+                                <li>Improved communication and persuasion skills through direct selling.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-studies" class="tab-panel" role="tabpanel" tabindex="0" hidden>
+                    <div class="experience-card">
+                        <div class="experience-entry">
+                            <h4>Ithari International College</h4>
+                            <p class="experience-meta">Bachelor of BSc (Hons) Computing (May 2022 – July 2025)</p>
+                        </div>
+                        <div class="experience-entry">
+                            <h4>Summit Secondary School</h4>
+                            <p class="experience-meta">SLC / +2 (2021)</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <footer id="contact">
-            <div class="social-links">
-                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-                <a href="mailto:your.email@example.com">Email</a>
-                <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+            <div class="contact-card">
+                <div class="contact-copy">
+                    <h2 class="section-title">Let’s Build Something</h2>
+                    <p class="contact-lead">Open to internships, freelance projects, and collaboration. Reach out and let’s talk.</p>
+                </div>
+                <div class="contact-actions">
+                    <a class="contact-btn primary" href="mailto:preyanshushah@gmail.com">Email Me</a>
+                    <a class="contact-btn" href="cv preyanshu shah.pdf" target="_blank" rel="noopener" download>Download CV</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/PreyanshuShah" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                    <a href="mailto:preyanshushah@gmail.com">Email</a>
+                    <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+                </div>
             </div>
-            <p>&copy; 2026 Your Name. Built with creativity and code.</p>
+            <p>&copy; 2026 Preyanshu Shah. Built with creativity and code.</p>
         </footer>
     </div>
 
