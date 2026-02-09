@@ -207,6 +207,21 @@ footer {
     box-shadow: 0 16px 40px color-mix(in srgb, var(--accent-cyan) 55%, transparent);
 }
 
+body.theme-light .contact-btn {
+    border-color: #0f4c81;
+    color: #0f4c81;
+}
+
+body.theme-light .contact-btn.primary {
+    background: #0f4c81;
+    color: #ffffff;
+    box-shadow: 0 12px 28px rgba(15, 76, 129, 0.25);
+}
+
+body.theme-light .contact-btn.primary:hover {
+    box-shadow: 0 16px 36px rgba(15, 76, 129, 0.3);
+}
+
 /* ==============================
    Typography + Text Effects
 ============================== */
@@ -265,6 +280,14 @@ footer {
     height: 2px;
     background: var(--accent-yellow);
     animation: underlineExpand 1.5s ease infinite;
+}
+
+body.theme-light .accent {
+    color: #0f4c81;
+}
+
+body.theme-light .accent::after {
+    background: #8a5a00;
 }
 
 .cv-link {
@@ -328,6 +351,12 @@ footer {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: fadeInUp 1s ease both;
+}
+
+body.theme-light .section-title {
+    background: none;
+    -webkit-text-fill-color: var(--text-primary);
+    color: var(--text-primary);
 }
 
 /* ==============================
@@ -664,6 +693,10 @@ body.theme-light .tab-button.active {
 .function { color: var(--accent-cyan); }
 .string { color: var(--accent-yellow); }
 .comment { color: var(--text-secondary); font-style: italic; }
+
+body.theme-light .keyword { color: #8b1b5e; }
+body.theme-light .function { color: #0f4c81; }
+body.theme-light .string { color: #8a5a00; }
 
 /* ==============================
    Projects Section
